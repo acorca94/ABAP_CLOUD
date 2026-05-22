@@ -1,0 +1,50 @@
+managed implementation in class ZBP_R_PARTIDOS_06 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_PARTIDOS_06 alias ZrPartidos06
+persistent table ZPARTIDOS_06
+extensible
+draft table ZPARTIDOS_06_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   IdPartido;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   IdPartido;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZPARTIDOS_06 corresponding extensible
+  {
+    IdPartido = ID_PARTIDO;
+    TipoPartido = TIPO_PARTIDO;
+    NombreJugador = NOMBRE_JUGADOR;
+    NumJugadores = NUM_JUGADORES;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

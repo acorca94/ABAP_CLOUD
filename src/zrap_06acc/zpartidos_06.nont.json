@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZPARTIDOS_06",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZPARTIDOS_06",
+  "sapObjectType": "ZPARTIDOS_06",
+  "rootNode": true
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_PARTIDOS_06'
+@MappingRole: true
+define role ZC_PARTIDOS_06 {
+  grant select on ZC_PARTIDOS_06
+  where INHERITING CONDITIONS FROM ENTITY ZR_PARTIDOS_06 REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_PARTIDOS_06'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_PARTIDOS_06'
+  }
+}
+define service ZUI_PARTIDOS_06_O4 provider contracts odata_v4_ui {
+  expose ZC_PARTIDOS_06;
+}
