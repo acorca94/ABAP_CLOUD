@@ -14,7 +14,8 @@ Repositorio con ejercicios y prácticas desarrollados durante la formación ofic
 | S4D400 | Programación ABAP básica | 80 horas |
 | S4D401 | Programación ABAP intermedia | 100 horas |
 | S4D426 | Ampliabilidad básica limpia para SAP S/4HANA Cloud | 20 horas |
-| S4D430 | Modelado de datos en Dictionary ABAP y CDS | 70 días |
+| S4D430 | Modelado de datos en Dictionary ABAP y CDS | 70 horas |
+| Total horas -> **270** | 
 
 ## Contenido del repositorio
 
