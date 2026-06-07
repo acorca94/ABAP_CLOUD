@@ -37,7 +37,7 @@ CLASS zcl_cp04_06 IMPLEMENTATION.
       ( id_reserva = 7  aerolinea = 'LH' num_vuelo = '0400' pasajero = 'Hans Müller'  fecha = '20260515' precio = '899.00'  estado = 'A' )
       ( id_reserva = 8  aerolinea = 'AA' num_vuelo = '0064' pasajero = 'Sarah Jones'  fecha = '20260525' precio = '510.00'  estado = 'A' )
     ).
-
+    out->write( lt_reservas ).
     " ─────────────────────────────────────────
     " TAREA 2.1 — Altas de reservas
     " ─────────────────────────────────────────

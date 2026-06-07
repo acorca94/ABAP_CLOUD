@@ -37,6 +37,7 @@ CLASS zcl_cp02_06 IMPLEMENTATION.
       ( id_reserva = 8  aerolinea = 'AA' num_vuelo = '0064' pasajero = 'Sarah Jones'  fecha = '20260525' precio = '510.00'  estado = 'A' )
     ).
 
+out->write( lt_reservas ).
     """""""""""""""""""""""""""""""" TAREA 2.1 """"""""""""""""""""""""""""""""""""""
 
     out->write( '--- Tarea 2.1 Altas ---' ).

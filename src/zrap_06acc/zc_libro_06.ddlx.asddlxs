@@ -1,0 +1,111 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Titulo'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Autor'
+annotate view ZC_LIBRO_06 with
+{
+  @EndUserText.label: 'ID del Libro'
+  @UI.facet: [ {
+    label: 'Información del Libro',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'ID del Libro'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'ID del Libro'
+  } ]
+  LibroID;
+
+  @EndUserText.label: 'Título'
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Título'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 ,
+    label: 'Título'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  Titulo;
+
+  @EndUserText.label: 'Autor'
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Autor'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Autor'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  Autor;
+
+  @EndUserText.label: 'Género'
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Género'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Género'
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  Genero;
+
+  @EndUserText.label: 'Número de páginas'
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Número de páginas'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Número de páginas'
+  } ]
+  NumPaginas;
+
+  @EndUserText.label: 'Disponible'
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Disponible'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 ,
+    label: 'Disponible'
+  } ]
+  Disponible;
+
+  @EndUserText.label: 'Estado'
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Estado'
+  } ]
+  Estado;
+
+ @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}
